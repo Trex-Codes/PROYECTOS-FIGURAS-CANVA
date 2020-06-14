@@ -13,7 +13,7 @@ ctx.beginPath();
 ctx.moveTo(150, 145); // Linea derecha (BASE CUBO)
 ctx.lineTo(220, 100);
 ctx.lineTo(220, 55); // linea 90° derecha 
-ctx.lineTo(190, 75	); // conectores linea central superior
+ctx.lineTo(190, 75); // conectores linea central superior
 ctx.stroke();
 ctx.closePath();
 
@@ -62,6 +62,22 @@ ctx.lineTo(160, 63); // Liena cuadro 1 (Vista frontal)
 // ctx.lineTo(120, 47); // Linea union Cuadro #1 - cuadro #2 (Delantera Superior)
 ctx.stroke();
 ctx.closePath();
+
+		// Linea central cuadro #1 Derecho
+		ctx.beginPath();
+		ctx.moveTo(190, 45);
+		ctx.lineTo(190, 65);
+		ctx.lineTo(160, 80);
+		ctx.stroke();
+		ctx.closePath();
+
+				// Linea conector inferio atras 
+				ctx.beginPath();
+				ctx.moveTo(190, 65);
+				ctx.lineTo(150, 50);
+				ctx.stroke();
+				ctx.closePath();
+
 
 // linea inferior cara #2 - #3
 ctx.beginPath();
@@ -137,3 +153,20 @@ ctx.closePath();
 		ctx.lineTo(100, 90);
 		ctx.stroke();
 		ctx.closePath();
+
+
+// CUADRO IZQUIERDA (linea recta 90° -- IZQUIERDA)
+ctx.beginPath();
+ctx.moveTo(120, 20);
+ctx.lineTo(120, 50);
+ctx.lineTo(90, 65);
+ctx.stroke();
+ctx.closePath();
+		
+		// // Lineea atras conector (INFERIOR)
+		// ctx.beginPath();
+		// ctx.moveTo(120, 50);
+		// ctx.lineTo(190, 75);
+		// ctx.lineTo(190, 45);
+		// ctx.stroke();
+		// ctx.closePath();
