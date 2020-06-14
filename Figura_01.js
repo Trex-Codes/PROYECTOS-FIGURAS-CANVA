@@ -1,3 +1,6 @@
+
+function ViewFigure1(){
+
 var canvas  = document.getElementById('CanvSect1');
 var ctx = canvas.getContext('2d');
 
@@ -6,6 +9,7 @@ ctx.beginPath();
 ctx.moveTo(150, 130);
 ctx.lineTo(150, 145);
 ctx.stroke();
+ctx.fill();
 ctx.closePath();
 
 // linea derecha central - CUBO 
@@ -164,9 +168,10 @@ ctx.stroke();
 ctx.closePath();
 		
 		// // Lineea atras conector (INFERIOR)
-		// ctx.beginPath();
-		// ctx.moveTo(120, 50);
-		// ctx.lineTo(190, 75);
-		// ctx.lineTo(190, 45);
-		// ctx.stroke();
-		// ctx.closePath();
+		ctx.beginPath();
+		ctx.moveTo(120, 50);
+		ctx.lineTo(190, 75);
+		ctx.lineTo(190, 45);
+		ctx.stroke();
+		ctx.closePath();
+}
