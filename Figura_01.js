@@ -1,8 +1,11 @@
 // FIGURA
 function ViewFigure1(){
 
-var canvas  = document.getElementById('CanvSect1');
-var ctx = canvas.getContext('2d');
+	var canvas = document.getElementById('CanvSect1');
+	var ctx = canvas.getContext('2d');
+  
+  	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
 
 // linea cental - (BASE CUBO)
 ctx.beginPath();
@@ -179,8 +182,10 @@ ctx.closePath();
 // VISTA SUPERIOR
 function ViewVist_Sup01(){
 
-	var canvas  = document.getElementById('CanvSect1');
-	var ctx = canvas.getContext('2d');
+  var canvas = document.getElementById('CanvSect1');
+  var ctx = canvas.getContext('2d');
+  
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	// PLANO PRINCIPAL
 	ctx.beginPath();
@@ -214,6 +219,7 @@ function ViewVist_Sup01(){
 	ctx.beginPath();
 	ctx.fillStyle = "lightblue";
 	ctx.fillRect(215, 50, 60, 50);
+	ctx.closePath();
 
 	// Contorno seccion grande
 	ctx.beginPath();
@@ -235,8 +241,10 @@ function ViewVist_Sup01(){
 // VISTA FRONTAL
 function ViewVist_Front01(){
 
-	var canvas  = document.getElementById('CanvSect1');
-	var ctx = canvas.getContext('2d');
+	var canvas = document.getElementById('CanvSect1');
+  	var ctx = canvas.getContext('2d');
+  
+  	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 	// PLANO PRINCIPAL
 	ctx.beginPath();
@@ -264,6 +272,16 @@ function ViewVist_Front01(){
 	ctx.fillRect(200, 75, 75, 60);
 	ctx.closePath();
 
+
+	// ---------- SECCION SUPERIOR ----------
+
+	// cuadro medio 
+	ctx.beginPath();
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(100, 15, 95, 30);
+	ctx.closePath();
+	
+
 	// linea central
 	ctx.beginPath();
 	ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
@@ -281,20 +299,31 @@ function ViewVist_Front01(){
 	ctx.closePath();
 }
 
+// VISTA LATERAL
+function ViewVist_Lat01(){
+
+	var canvas = document.getElementById('CanvSect1');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// Linea figura
+	ctx.beginPath();
+	ctx.fillStyle = 'lightblue';
+	ctx.moveTo(25, 135);
+	ctx.lineTo(275, 135);
+	ctx.lineTo(275, 15);
+	ctx.lineTo(150, 15);
+	ctx.lineTo(150, 95);
+	ctx.lineTo(25, 95);
+	ctx.lineTo(25, 135);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
 
 
 
 
 
 
-
-
-
-
-
-// BOTON RESET CANVAS
-function ResetCanva01(){
-	var canvas  = document.getElementById('CanvSect1');
-	var ctx = canvas.getContext('2d');
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	}
