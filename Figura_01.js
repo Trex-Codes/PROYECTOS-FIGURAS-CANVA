@@ -175,3 +175,65 @@ ctx.closePath();
 		ctx.stroke();
 		ctx.closePath();
 }
+
+function ViewVist_Sup01(){
+
+	var canvas  = document.getElementById('CanvSect1');
+	var ctx = canvas.getContext('2d');
+
+	// PLANO PRINCIPAL
+	ctx.beginPath();
+	ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
+	ctx.strokeRect(25, 15, 250, 120);
+	ctx.closePath();
+
+	// ---------- SECCION DERECHA ---------- 
+	
+	// Cuadro superior
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
+	ctx.fillRect(25, 15, 125, 35);
+	ctx.closePath();
+
+	// Cuadro medio
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(250, 250, 4, 0.7)";
+	ctx.fillRect(25, 50, 125, 50);
+	ctx.closePath();
+
+	// cuadro inferior 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
+	ctx.fillRect(25, 100, 125, 35);
+	ctx.closePath();
+
+	// ---------- SECCION IZQUERDA ----------
+
+	// cuadro medio
+	ctx.beginPath();
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(215, 50, 60, 50);
+
+	// Contorno seccion grande
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+	ctx.moveTo(150, 15);
+	ctx.lineTo(150, 135);
+	ctx.lineTo(275, 135);
+	ctx.lineTo(275, 100);
+	ctx.lineTo(215, 100);
+	ctx.lineTo(215, 50);
+	ctx.lineTo(275, 50);
+	ctx.lineTo(275, 15);
+	ctx.lineTo(150, 15);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
+
+
+function ResetCanva01(){
+	var canvas  = document.getElementById('CanvSect1');
+	var ctx = canvas.getContext('2d');
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
+}
