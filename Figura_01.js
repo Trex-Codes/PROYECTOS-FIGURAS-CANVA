@@ -307,12 +307,6 @@ function ViewVist_Lat01(){
   
  	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-	// PLANO PRINCIPAL
-	ctx.beginPath();
-	ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
-	ctx.strokeRect(25, 15, 250, 120);
-	ctx.closePath();
-
 	// Linea figura
 	ctx.beginPath();
 	ctx.fillStyle = 'lightblue';
