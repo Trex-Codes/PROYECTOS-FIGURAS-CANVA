@@ -1,0 +1,47 @@
+#Figure_01{
+	background: lightblue;
+	border: none;
+	padding: 10px;
+}
+
+#Figure_01:hover{
+	background-color: #1ADEE4FF;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#Vist_Sup01{
+	background-color: lightblue;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Sup01:hover{
+	background-color: #1ADEE4FF;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#Vist_Front01{
+	background-color: lightblue;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Front01:hover{
+	background-color: #1ADEE4FF;
+	border: 1px solid black;
+	border-radius: 10px;
+}
+
+#Vist_Lat01{
+	background-color: lightblue;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Lat01:hover{
+	background-color: #1ADEE4FF;
+	border: 1px solid black;
+	border-radius: 10px;
+}
