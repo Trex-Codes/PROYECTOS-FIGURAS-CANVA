@@ -1,7 +1,7 @@
 // ------------------ CUBO BASE BASICA ------------------
 
 // FIGURA
-function ViewFigure2(){
+function ViewFigure3(){
 
 	var canvas = document.getElementById('CanvSect3');
 	var ctx = canvas.getContext('2d');
@@ -82,16 +82,96 @@ ctx.closePath();
 }
 
 // VISTA SUPERIOR
-// function ViewVist_Sup03(){
-	
-  var canvas = document.getElementById('CanvSect1');
+function ViewVist_Sup03(){
+
+  var canvas = document.getElementById('CanvSect3');
   var ctx = canvas.getContext('2d');
   
   ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-	// PLANO PRINCIPAL
+// ---------- SECCION IZQUIERDA ---------- 
+
+// cuadro izquierda inferior
+ctx.beginPath();
+ctx.fillStyle = "rgba(240, 235, 234, 0.9)";
+ctx.fillRect(25, 70, 50, 65);
+ctx.strokeRect(25, 70, 50, 65);
+ctx.closePath();
+
+// Cuadro izquierda supeerior 
+ctx.beginPath();
+ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
+ctx.fillRect(25, 45, 50, 25);
+ctx.strokeRect(25, 45, 50, 25);
+ctx.closePath();
+
+// Triangulo 
+ctx.beginPath();
+ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
+ctx.moveTo(40, 45);
+ctx.lineTo(40, 15);
+ctx.lineTo(275, 15);
+ctx.lineTo(75, 135);
+ctx.lineTo(75, 45);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+}
+
+// VISTA FRONTAL
+function ViewVist_Front03(){
+
+	var canvas = document.getElementById('CanvSect3');
+	var ctx = canvas.getContext('2d');
+
+  	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
 	ctx.beginPath();
-	ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
-	ctx.strokeRect(25, 15, 250, 120);
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(76, 105, 200, 30);
+	ctx.strokeRect(76, 105, 200, 30);
 	ctx.closePath();
-// }
+
+	// cuadro izquierdo inferior 
+	ctx.beginPath();
+	ctx.fillStyle = "pink";
+	ctx.fillRect(25, 75, 50, 60);
+	ctx.strokeRect(25, 75, 50, 60);
+	ctx.closePath();
+
+	// cuadro izquierdo superior 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(240, 235, 234, 0.9)";
+	ctx.fillRect(25, 15, 50, 60);
+	ctx.strokeRect(25, 15, 50, 60);
+	ctx.closePath();
+}
+
+// VISTA LATERAL
+function ViewVist_Lat03(){
+
+	var canvas = document.getElementById('CanvSect3');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// cuadro inferior largo
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(25, 105, 250, 30);
+	ctx.strokeRect(25, 105, 250, 30);
+	ctx.closePath();
+
+	// trapecio 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
+	ctx.moveTo(25, 105);
+	ctx.lineTo(25, 75);
+	ctx.lineTo(125, 15);
+	ctx.lineTo(225, 15);
+	ctx.lineTo(225, 105);
+	ctx.lineTo(25, 105);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
