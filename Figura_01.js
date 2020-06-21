@@ -262,7 +262,7 @@ function ViewVist_Front01(){
 
 // Cuadro medio
 	ctx.beginPath();
-	ctx.fillStyle = "rgba(250, 250, 4, 0.7)";
+	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 	ctx.fillRect(100, 75, 100, 60);
 	ctx.closePath();
 
