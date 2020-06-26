@@ -207,7 +207,7 @@ function ViewVist_Front04(){
 }
 
 // VISTA LATERAL
-// function ViewVist_Lat04(){
+function ViewVist_Lat04(){
 
 	var canvas = document.getElementById('CanvSect4');
   	var ctx = canvas.getContext('2d');
@@ -231,6 +231,4 @@ function ViewVist_Front04(){
 	ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
 	ctx.fillRect(225, 15, 50, 120);
 	ctx.strokeRect(225, 15, 50, 120);
-
-
-// }
+}
