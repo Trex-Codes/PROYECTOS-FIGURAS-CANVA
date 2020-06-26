@@ -5,9 +5,8 @@
 }
 
 #Figure_01:hover{
-	background-color: #1ADEE4FF;
+	background-color: rgba(51, 255, 246, 0.4);
 	border: 1px solid black;
-	border-radius: 10px;
 }
 
 #Vist_Sup01{
@@ -17,9 +16,8 @@
 }
 
 #Vist_Sup01:hover{
-	background-color: #1ADEE4FF;
+	background-color: rgba(51, 255, 246, 0.4);
 	border: 1px solid black;
-	border-radius: 10px;
 }
 
 #Vist_Front01{
@@ -29,9 +27,8 @@
 }
 
 #Vist_Front01:hover{
-	background-color: #1ADEE4FF;
+	background-color: rgba(51, 255, 246, 0.4);
 	border: 1px solid black;
-	border-radius: 10px;
 }
 
 #Vist_Lat01{
@@ -41,7 +38,6 @@
 }
 
 #Vist_Lat01:hover{
-	background-color: #1ADEE4FF;
+	background-color: rgba(51, 255, 246, 0.4);
 	border: 1px solid black;
-	border-radius: 10px;
 }

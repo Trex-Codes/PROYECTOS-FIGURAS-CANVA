@@ -1,0 +1,43 @@
+#Figure_03{
+	background-color: yellow;
+	border: none;
+	padding: 10px;
+}
+
+#Figure_03:hover{
+	background-color: rgba(135, 151, 18, 0.4);
+	border: 1px solid black;
+}
+
+#Vist_Sup03{
+	background-color: yellow;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Sup03:hover{
+	background-color: rgba(135, 151, 18, 0.4);
+	border: 1px solid black;
+}
+
+#Vist_Front03{
+	background-color: yellow;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Front03:hover{
+	background-color: rgba(135, 151, 18, 0.4);
+	border: 1px solid black;
+}
+
+#Vist_Lat03{
+	background-color: yellow;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Lat03:hover{
+	background-color: rgba(135, 151, 18, 0.4);
+	border: 1px solid black;
+}

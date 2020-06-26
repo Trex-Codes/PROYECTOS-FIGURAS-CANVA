@@ -1,0 +1,44 @@
+#Figure_02{
+	background-color: lightgreen;
+	border: none;
+	padding: 10px;
+}
+
+#Figure_02:hover{
+	background-color: rgba(50, 179, 33,  0.4);
+	border: 1px solid black;
+}
+
+#Vist_Sup02{
+	background-color: lightgreen;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Sup02:hover{
+	background-color: rgba(50, 179, 33,  0.4);
+	border: 1px solid black;
+}
+
+#Vist_Front02{
+	background-color: lightgreen;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Front02:hover{
+	background-color: rgba(50, 179, 33,  0.4);
+	border: 1px solid black;
+}
+
+#Vist_Lat02{
+	background-color: lightgreen;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Lat02:hover{
+	background-color: rgba(50, 179, 33,  0.4);
+	border: none;
+	border: 1px solid black;
+}

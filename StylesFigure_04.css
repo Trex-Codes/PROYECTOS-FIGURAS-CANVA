@@ -1,0 +1,43 @@
+#Figure_04{
+	background-color: pink;
+	border: none;
+	padding: 10px;
+}
+
+#Figure_04:hover{
+	background-color: rgba(189, 140, 182, 0.4);
+	border: 1px solid black;
+}
+
+#Vist_Sup04{
+	background-color: pink;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Sup04:hover{
+	background-color: rgba(189, 140, 182, 0.4);
+	border: 1px solid black;
+}
+
+#Vist_Front04{
+	background-color: pink;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Front04:hover{
+	background-color: rgba(189, 140, 182, 0.4);
+	border: 1px solid black;
+}
+
+#Vist_Lat04{
+	background-color: pink;
+	border: none;
+	padding: 10px;
+}
+
+#Vist_Lat04:hover{
+	background-color: rgba(189, 140, 182, 0.4);
+	border: 1px solid black;	
+}
