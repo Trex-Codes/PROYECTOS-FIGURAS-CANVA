@@ -321,9 +321,3 @@ function ViewVist_Lat01(){
 	ctx.fill();
 	ctx.closePath();
 }
-
-
-
-
-
-
