@@ -1,5 +1,5 @@
 // FIGURA
-// function ViewFigure2(){
+function ViewFigure7(){
 
 	var canvas = document.getElementById('CanvSect7');
 	var ctx = canvas.getContext('2d');
@@ -133,3 +133,4 @@ ctx.closePath();
  ctx.lineTo(65, 45);
  ctx.stroke();
 ctx.closePath();
+}
