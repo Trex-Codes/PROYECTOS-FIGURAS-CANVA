@@ -1,13 +1,14 @@
 // FIGURA 
-// function ViewFigure9(){
+function ViewFigure9(){
 
 	var canvas = document.getElementById('CanvSect9');
-	var ctx = canvas.getContext('2d');
+  	var ctx = canvas.getContext('2d');
   
-  	ctx.clearRect(0, 0, canvas.width, canvas.height);
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 
 // linea cental - (BASE CUBO)
+ctx.beginPath();
 ctx.moveTo(150, 128);
 ctx.lineTo(150, 145);
 ctx.stroke();
@@ -177,6 +178,164 @@ ctx.lineTo(134, 117);
 ctx.stroke();
 ctx.closePath();
 
-// }
+}
+
+// VISTA SUPERIOR 
+function ViewVist_Sup09(){
+
+	var canvas = document.getElementById('CanvSect9');
+  	var ctx = canvas.getContext('2d');
+  
+  	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// ---------- SECCION SUPERIOR ----------
+
+			// PARTE IZQUIERDA
+
+	// cuadro (1)
+	ctx.beginPath();
+	ctx.fillStyle = "lightgreen";
+	ctx.fillRect(25, 15, 50, 30);
+	ctx.strokeRect(25, 15, 50, 30);
+	ctx.closePath();
+
+	// cuadro (2)
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+	ctx.fillRect(25, 45, 50, 30);
+	ctx.strokeRect(25, 45, 50, 30);
+	ctx.closePath();
+
+			// PARTE MEDIO
+	
+	// cuadrado medio
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
+	ctx.fillRect(75, 15, 150, 60);
+	ctx.strokeRect(75, 15, 150, 60);
+	ctx.closePath();
+
+			// PARTE DERECHA
+
+	// cuadrado (1)
+	ctx.beginPath();
+	ctx.fillStyle = "lightgreen";
+	ctx.fillRect(225, 15, 50, 30);
+	ctx.strokeRect(225, 15, 50, 30);
+	ctx.closePath();
+
+	// cuadrado (2)
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+	ctx.fillRect(225, 45, 50, 30);
+	ctx.strokeRect(225, 45, 50, 30);
+	ctx.closePath();
+
+	// ---------- SECCION INFERIOR ----------
+
+	// Cuadrado principal 
+	ctx.fillStyle = "rgba(51, 238, 255, 0.7)";
+	ctx.fillRect(25, 75, 250, 60);
+	ctx.strokeRect(25, 75, 250, 60);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+
+	// cuadrado medio 
+	ctx.fillStyle = "rgba(160, 244, 251, 0.7)";
+	ctx.fillRect(75, 85, 150, 40);
+	ctx.strokeRect(75, 85, 150, 40);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
+
+// VISTA FRONTAL
+function ViewVist_Front09(){
+
+	var canvas = document.getElementById('CanvSect9');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// ---------- SECCION SUPERIOR ----------
+
+			// PARTE IZQUIERDA
+
+	// cuadro (1)
+	ctx.beginPath();
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(25, 15, 50, 30);
+	ctx.strokeRect(25, 15, 50, 30);
+	ctx.closePath();
+
+	// cuadro (2)
+	ctx.beginPath();
+	ctx.fillStyle = "pink";
+	ctx.fillRect(25, 45, 50, 30);
+	ctx.strokeRect(25, 45, 50, 30);
+	ctx.closePath();
+
+			// PARTE MEDIO
+	
+	// cuadrado medio
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
+	ctx.fillRect(75, 15, 150, 60);
+	ctx.strokeRect(75, 15, 150, 60);
+	ctx.closePath();
+
+			// PARTE DERECHA
+
+	// cuadrado (1)
+	ctx.beginPath();
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(225, 15, 50, 30);
+	ctx.strokeRect(225, 15, 50, 30);
+	ctx.closePath();
+
+	// cuadrado (2)
+	ctx.beginPath();
+	ctx.fillStyle = "pink";
+	ctx.fillRect(225, 45, 50, 30);
+	ctx.strokeRect(225, 45, 50, 30);
+	ctx.closePath();
+
+	// ---------- SECCION INFERIOR ----------
+
+	// Cuadrado principal 
+	ctx.fillStyle = "rgba(204, 255, 0, 0.7)";
+	ctx.fillRect(25, 75, 250, 60);
+	ctx.strokeRect(25, 75, 250, 60);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
+
+// VISTA LATERAL
+function ViewVist_Lat09(){
+
+	var canvas = document.getElementById('CanvSect9');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 
+	// ---------- FIGURA TOTAL ----------
+
+	// figura 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
+	ctx.moveTo(25, 135);
+	ctx.lineTo(25, 105);
+	ctx.lineTo(175, 105);
+	ctx.lineTo(175, 45);
+	ctx.lineTo(225, 45);
+	ctx.lineTo(225, 15);
+	ctx.lineTo(275, 15);
+	ctx.lineTo(275, 135);
+	ctx.lineTo(25, 135);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
