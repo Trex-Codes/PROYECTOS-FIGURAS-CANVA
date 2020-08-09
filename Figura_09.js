@@ -6,7 +6,6 @@ function ViewFigure9(){
   
  	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-
 // linea cental - (BASE CUBO)
 ctx.beginPath();
 ctx.moveTo(150, 128);
