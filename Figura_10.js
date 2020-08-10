@@ -1,5 +1,5 @@
 // FIGURA
-// function ViewFigure9(){
+function ViewFigure10(){
 
 	var canvas = document.getElementById('CanvSect10');
 	var ctx = canvas.getContext('2d');
@@ -7,6 +7,7 @@
   	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
 // linea cental - (BASE CUBO)
+ctx.beginPath();
 ctx.moveTo(150, 100);
 ctx.lineTo(150, 145);
 ctx.stroke();
@@ -109,26 +110,94 @@ ctx.moveTo(96, 63);
 ctx.lineTo(125, 47);
 ctx.stroke();
 ctx.closePath();
+}
 
+// VISTA SUPERIOR 
+function ViewVist_Sup10(){
 
+	var canvas = document.getElementById('CanvSect10');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+	// ---------- SECCION FIGURA ----------
 
+	// Figura 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
+	ctx.moveTo(25, 15);
+	ctx.lineTo(25, 135);
+	ctx.lineTo(75, 135);
+	ctx.lineTo(75, 45);
+	ctx.lineTo(175, 45);
+	ctx.lineTo(175, 105);
+	ctx.lineTo(225, 105);
+	ctx.lineTo(225, 135);
+	ctx.lineTo(275, 135);
+	ctx.lineTo(275, 15);
+	ctx.lineTo(25, 15);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
 
+// VISTA FRONTAL
+function ViewVist_Front10(){
 
+	var canvas = document.getElementById('CanvSect10');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
+	// ---------- SECCION LATERAL IZQUIERDA ----------
 
+	// cuadro izquierda (1)
+	ctx.beginPath();
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(25, 15, 50, 120);
+	ctx.strokeRect(25, 15, 50, 120);
+	ctx.stroke();
+	ctx.closePath();
 
+	// cuadro izquierda (2)
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
+	ctx.fillRect(75, 15, 100, 120);
+	ctx.strokeRect(75, 15, 100, 120);
+	ctx.stroke();
+	ctx.closePath();
 
+	// cuadro derecha (1)
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+	ctx.fillRect(175, 15, 50, 120);
+	ctx.strokeRect(175, 15, 50, 120);
+	ctx.stroke();
+	ctx.closePath();
 
+	// cuadro derecha (2)
+	ctx.beginPath();
+	ctx.fillStyle = "pink";
+	ctx.fillRect(225, 15, 50, 120);
+	ctx.strokeRect(225, 15, 50, 120);
+	ctx.stroke();
+	ctx.closePath();
+}
 
+// VISTA LATERAL
+function ViewVist_Lat10(){
 
+	var canvas = document.getElementById('CanvSect10');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-
-
-
-
-
-
-
-
-// }
+	// PLANO PRINCIPAL
+	ctx.beginPath();
+	ctx.fillStyle = 'lightblue';
+	ctx.fillRect(25, 15, 250, 120);
+	ctx.strokeRect(25, 15, 250, 120);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
