@@ -111,6 +111,7 @@ ctx.stroke();
 ctx.closePath();
 
 // --------------------------------------------
+
  // cuadro pequeño 
  ctx.beginPath();
  ctx.moveTo(85, 55);

@@ -233,19 +233,17 @@ function ViewVist_Sup09(){
 	// ---------- SECCION INFERIOR ----------
 
 	// Cuadrado principal 
+	ctx.beginPath();
 	ctx.fillStyle = "rgba(51, 238, 255, 0.7)";
 	ctx.fillRect(25, 75, 250, 60);
 	ctx.strokeRect(25, 75, 250, 60);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	// cuadrado medio 
+	ctx.beginPath();
 	ctx.fillStyle = "rgba(160, 244, 251, 0.7)";
 	ctx.fillRect(75, 85, 150, 40);
 	ctx.strokeRect(75, 85, 150, 40);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 }
 
@@ -303,11 +301,10 @@ function ViewVist_Front09(){
 	// ---------- SECCION INFERIOR ----------
 
 	// Cuadrado principal 
+	ctx.beginPath();
 	ctx.fillStyle = "rgba(204, 255, 0, 0.7)";
 	ctx.fillRect(25, 75, 250, 60);
 	ctx.strokeRect(25, 75, 250, 60);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 }
 
@@ -318,7 +315,6 @@ function ViewVist_Lat09(){
   	var ctx = canvas.getContext('2d');
   
  	ctx.clearRect(0, 0, canvas.width, canvas.height);
-
 
 	// ---------- FIGURA TOTAL ----------
 

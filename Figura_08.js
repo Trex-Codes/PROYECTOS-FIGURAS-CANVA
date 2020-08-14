@@ -139,8 +139,6 @@ ctx.beginPath();
 ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
 ctx.fillRect(25, 15, 250, 30);
 ctx.strokeRect(25, 15, 250, 30);
-ctx.stroke();
-ctx.fill();
 ctx.closePath();
 }
 
@@ -177,7 +175,6 @@ ctx.beginPath();
 ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 ctx.fillRect(25, 105, 250, 30);
 ctx.strokeRect(25, 105, 250, 30);
-ctx.stroke();
 ctx.closePath();
 }
 

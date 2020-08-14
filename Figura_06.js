@@ -6,7 +6,6 @@ function ViewFigure6(){
   
   	ctx.clearRect(0, 0, canvas.width, canvas.height);
 
-
 // linea derecha central - CUBO 
 ctx.beginPath();
 ctx.moveTo(150, 145); // Linea derecha (BASE CUBO)
@@ -23,6 +22,7 @@ ctx.stroke();
 ctx.closePath();	
 
 // --------------------------------------------
+
 			// BASES CUADRICULA
 // LINEAS 90 GRADOS (IZQ - DER)
 
@@ -154,7 +154,6 @@ function ViewVist_Sup06(){
 	ctx.fillStyle = "lightblue";
 	ctx.fillRect(25, 15, 125, 30);
 	ctx.strokeRect(25, 15, 125, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// cuadrado superior derecho rosado
@@ -162,7 +161,6 @@ function ViewVist_Sup06(){
 	ctx.fillStyle = "pink";
 	ctx.fillRect(150, 15, 125, 30);
 	ctx.strokeRect(150, 15, 125, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// ---------- SECCION MEDIO 1 ---------- 
@@ -172,7 +170,6 @@ function ViewVist_Sup06(){
 	ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
 	ctx.fillRect(25, 45, 250, 30);
 	ctx.strokeRect(25, 45, 250, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// ---------- SECCION MEDIO 2 ---------- 
@@ -182,7 +179,6 @@ function ViewVist_Sup06(){
 	ctx.fillStyle = "lightblue";;
 	ctx.fillRect(25, 75, 250, 30);
 	ctx.strokeRect(25, 75, 250, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// ---------- SECCION INFERIOR ---------- 
@@ -192,7 +188,6 @@ function ViewVist_Sup06(){
 	ctx.fillStyle = "lightgreen";
 	ctx.fillRect(25, 105, 50, 30);
 	ctx.strokeRect(25, 105, 50, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// cuadrado derecho amarillo 
@@ -200,7 +195,6 @@ function ViewVist_Sup06(){
 	ctx.fillStyle = "rgba(250, 250, 4, 0.7)";
 	ctx.fillRect(75, 105, 200, 30);
 	ctx.strokeRect(75, 105, 200, 30);
-	ctx.stroke();
 	ctx.closePath();
 	}
 
@@ -232,6 +226,7 @@ ctx.beginPath();
 ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
 ctx.fillRect(25, 45, 250, 30);
 ctx.strokeRect(25, 45, 250, 30);
+ctx.closePath();
 
 // ---------- SECCION MEDIO 2 ---------- 
 
@@ -240,7 +235,6 @@ ctx.beginPath();
 ctx.fillStyle = "lightgreen";
 ctx.fillRect(25, 75, 100, 60);
 ctx.strokeRect(	25, 75, 100, 60);
-ctx.stroke();
 ctx.closePath();
 
 // cuadro parte superior derecha 
@@ -248,8 +242,6 @@ ctx.beginPath();
 ctx.fillStyle = "rgba(240, 235, 234, 0.9)";
 ctx.fillRect(125, 75, 150, 30);
 ctx.strokeRect(125, 75, 150, 30);
-ctx.stroke();
-ctx.fill();
 ctx.closePath();
 
 // cuadro parte superior izquierda
@@ -257,8 +249,6 @@ ctx.beginPath();
 ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 ctx.fillRect(125, 105, 150, 30);
 ctx.strokeRect(125, 105, 150, 30);
-ctx.stroke();
-ctx.fill();
 ctx.closePath();
 }
 

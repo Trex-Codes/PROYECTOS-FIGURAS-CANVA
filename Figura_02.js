@@ -195,8 +195,6 @@ function ViewVist_Sup02(){
 	ctx.fillStyle = "lightgreen";
 	ctx.fillRect(25, 15, 50, 30);
 	ctx.strokeRect(25, 15, 50, 30);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	// Cuadro derecha 
@@ -204,8 +202,6 @@ function ViewVist_Sup02(){
 	ctx.fillStyle = "lightblue";
 	ctx.fillRect(75, 15, 200, 30);
 	ctx.strokeRect(75, 15, 200, 30);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	/// LIENA PARTE BLANCA 
@@ -227,8 +223,6 @@ function ViewVist_Sup02(){
 	ctx.fillStyle = "lightgreen";
 	ctx.fillRect(25, 75, 49, 30);
 	ctx.strokeRect(25, 75, 49, 30);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	// Cuadro 2 izquierda 
@@ -236,8 +230,6 @@ function ViewVist_Sup02(){
 	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 	ctx.fillRect(25, 105, 49, 29);
 	ctx.strokeRect(25, 105, 49, 29);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 }
 
@@ -255,8 +247,6 @@ function ViewVist_Front02(){
 	ctx.fillStyle = "pink";
 	ctx.fillRect(25, 75, 49, 30);
 	ctx.strokeRect(25, 75, 49, 30);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	// Cuadro medio Superior largo
@@ -271,8 +261,6 @@ function ViewVist_Front02(){
 	ctx.fillStyle = "white";
 	ctx.fillRect(25, 105, 49, 29);
 	ctx.strokeRect(25, 105, 49, 29);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	// cuadro inferior largo
@@ -329,8 +317,6 @@ function ViewVist_Lat02(){
 	ctx.fillStyle = "lightgreen";
 	ctx.fillRect(225, 15, 50, 59);
 	ctx.strokeRect(225, 15, 50, 59);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 
 	// Cuadro azul rampa

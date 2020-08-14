@@ -156,7 +156,6 @@ function ViewVist_Front10(){
 	ctx.fillStyle = "lightblue";
 	ctx.fillRect(25, 15, 50, 120);
 	ctx.strokeRect(25, 15, 50, 120);
-	ctx.stroke();
 	ctx.closePath();
 
 	// cuadro izquierda (2)
@@ -164,7 +163,6 @@ function ViewVist_Front10(){
 	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 	ctx.fillRect(75, 15, 100, 120);
 	ctx.strokeRect(75, 15, 100, 120);
-	ctx.stroke();
 	ctx.closePath();
 
 	// cuadro derecha (1)
@@ -172,7 +170,6 @@ function ViewVist_Front10(){
 	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
 	ctx.fillRect(175, 15, 50, 120);
 	ctx.strokeRect(175, 15, 50, 120);
-	ctx.stroke();
 	ctx.closePath();
 
 	// cuadro derecha (2)
@@ -180,7 +177,6 @@ function ViewVist_Front10(){
 	ctx.fillStyle = "pink";
 	ctx.fillRect(225, 15, 50, 120);
 	ctx.strokeRect(225, 15, 50, 120);
-	ctx.stroke();
 	ctx.closePath();
 }
 
@@ -197,7 +193,5 @@ function ViewVist_Lat10(){
 	ctx.fillStyle = 'lightblue';
 	ctx.fillRect(25, 15, 250, 120);
 	ctx.strokeRect(25, 15, 250, 120);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
 }

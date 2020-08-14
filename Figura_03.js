@@ -44,6 +44,7 @@ ctx.moveTo(75, 112);
 ctx.lineTo(75, 85);
 ctx.stroke();
 ctx.closePath();
+
 // --------------------------------------------
 
 // linea triangulo superior (1)

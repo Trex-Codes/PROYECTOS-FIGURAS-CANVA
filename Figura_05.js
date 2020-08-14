@@ -110,7 +110,6 @@ function ViewVist_Front05(){
 	ctx.fillStyle = "rgba(232, 235, 214, 0.7)";
 	ctx.fillRect(25, 15, 250, 30);
 	ctx.strokeRect(25, 15, 250, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 
@@ -167,7 +166,6 @@ function ViewVist_Lat05(){
 	ctx.fillStyle = "rgba(232, 235, 214, 0.7)";
 	ctx.fillRect(25, 15, 250, 30);
 	ctx.strokeRect(25, 15, 250, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 // ---------- SECCION INFERIOR ---------- 
@@ -195,5 +193,3 @@ function ViewVist_Lat05(){
 	ctx.fill();
 	ctx.closePath();
 }
-
-

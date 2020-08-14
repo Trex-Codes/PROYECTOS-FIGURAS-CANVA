@@ -59,6 +59,7 @@ ctx.closePath();
 		ctx.lineTo(120, 65);
 		ctx.stroke();
 		ctx.closePath();
+		
 // --------------------------------------------
 
 // LINEA INTERMEDIO (Cuadro #1)
@@ -199,18 +200,21 @@ function ViewVist_Sup01(){
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
 	ctx.fillRect(25, 15, 125, 35);
+	ctx.strokeRect(25, 15, 125, 35);
 	ctx.closePath();
 
 	// Cuadro medio
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(250, 250, 4, 0.7)";
 	ctx.fillRect(25, 50, 125, 50);
+	ctx.strokeRect(25, 50, 125, 50);
 	ctx.closePath();
 
 	// cuadro inferior 
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
 	ctx.fillRect(25, 100, 125, 35);
+	ctx.strokeRect(25, 100, 125, 35);
 	ctx.closePath();
 
 	// ---------- SECCION IZQUERDA ----------
@@ -258,18 +262,21 @@ function ViewVist_Front01(){
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
 	ctx.fillRect(25, 75, 75, 60);
+	ctx.strokeRect(25, 75, 75, 60);
 	ctx.closePath();
 
 // Cuadro medio
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 	ctx.fillRect(100, 75, 100, 60);
+	ctx.strokeRect(100, 75, 100, 60);
 	ctx.closePath();
 
 	// cuadro izquierdo 
 	ctx.beginPath();
 	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
 	ctx.fillRect(200, 75, 75, 60);
+	ctx.strokeRect(200, 75, 75, 60);
 	ctx.closePath();
 
 

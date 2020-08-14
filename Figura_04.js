@@ -5,8 +5,6 @@ function ViewFigure4(){
 	var ctx = canvas.getContext('2d');
   
   	ctx.clearRect(0, 0, canvas.width, canvas.height);
-// }
-
 
 // linea cental - (BASE CUBO)
 ctx.beginPath();
@@ -75,6 +73,7 @@ ctx.moveTo(150, 145);
 ctx.lineTo(123, 133);
 ctx.stroke();
 ctx.closePath();
+
 	// --------------------------------------------
 
 	// Linea 90° izquierda
@@ -143,8 +142,6 @@ function ViewVist_Sup04(){
 	ctx.fillStyle = "lightblue";
 	ctx.fillRect(25, 15, 200, 30);
 	ctx.strokeRect(25, 15, 200, 30);
-	ctx.stroke();
-	ctx.fill();
 	ctx.closePath();
  
 	// ---------- SECCION INFERIOR ----------
@@ -181,7 +178,6 @@ function ViewVist_Front04(){
 	ctx.fillStyle = "lightblue";
 	ctx.fillRect(25, 105, 50, 30);
 	ctx.strokeRect(25, 105, 50, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// cuadrado medio largo
@@ -189,6 +185,7 @@ function ViewVist_Front04(){
 	ctx.fillStyle = "pink";
 	ctx.fillRect(75, 105, 150, 30);
 	ctx.strokeRect(75, 105, 150, 30);
+	ctx.closePath();
 
 	//cuadrado derecha
 	ctx.beginPath();
@@ -204,6 +201,7 @@ function ViewVist_Front04(){
 	ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
 	ctx.fillRect(25, 15, 200, 90);
 	ctx.strokeRect(25, 15, 200, 90);
+	ctx.closePath();
 }
 
 // VISTA LATERAL
@@ -221,7 +219,6 @@ function ViewVist_Lat04(){
 	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
 	ctx.fillRect(25, 105, 200, 30);
 	ctx.strokeRect(25, 105, 200, 30);
-	ctx.stroke();
 	ctx.closePath();
 
 	// ---------- SECCION INFERIOR ----------
@@ -231,4 +228,5 @@ function ViewVist_Lat04(){
 	ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
 	ctx.fillRect(225, 15, 50, 120);
 	ctx.strokeRect(225, 15, 50, 120);
+	ctx.closePath();
 }
