@@ -1,5 +1,5 @@
 // FIGURA
-// function ViewFigure11(){
+function ViewFigure11(){
 
 	var canvas = document.getElementById('CanvSect11');
 	var ctx = canvas.getContext('2d');
@@ -47,6 +47,7 @@ ctx.closePath();
 
 // cuadro izquierdo completo
 ctx.beginPath();
+ctx.lineTo(145, 68);
 ctx.lineTo(107, 53); 
 ctx.lineTo(50, 75); // Conector base Arriba - Base Abajo 
 ctx.stroke();
@@ -62,60 +63,131 @@ ctx.lineTo(200, 105); // Linea barra base 2.0 (Vista  frontal- lateral)
 ctx.lineTo(200, 70);
 ctx.lineTo(145, 50);
 ctx.lineTo(154, 45);
-ctx.lineTo(108, 27);
-ctx.lineTo(108, 70);
+ctx.lineTo(107, 27);
+ctx.lineTo(107, 53); // Linea 90 
 ctx.stroke();
 ctx.closePath();
 
 // --------------------------------------------
 
-// linea corte medio (1)
-ctx.beginPath();
-ctx.lineTo(108, 70);
-ctx.lineTo(70, 85);
-ctx.stroke();
-ctx.closePath();
-
-// liena corte medio (2)
-ctx.beginPath();
-ctx.moveTo(200, 105);
-ctx.lineTo(153, 87);
-ctx.stroke();
-ctx.closePath();
-
 // Liena corte medio (90)
 ctx.beginPath();
 ctx.moveTo(145, 50);
-ctx.lineTo(145, 63);
+ctx.lineTo(145, 68);
 ctx.stroke();
 ctx.closePath();
 
 // cuadro menor izquierda 
 ctx.beginPath();
 ctx.moveTo(70, 98);
-ctx.lineTo(95, 88);
+ctx.lineTo(91, 89);
 ctx.stroke();
 ctx.closePath();
 
-// cubo medio
+// liena corte medio (Division central)
 ctx.beginPath();
-ctx.moveTo(125, 80);
-ctx.lineTo(95, 68);
-ctx.lineTo(95, 88);
-ctx.lineTo(125, 100);
-ctx.lineTo(125, 80);
-ctx.lineTo(153, 65);
-ctx.lineTo(153, 87);
-ctx.lineTo(125, 100);
+ctx.lineTo(91, 75);
+ctx.lineTo(70, 85);
 ctx.stroke();
 ctx.closePath();
 
-// cubo medio 2 
+// Linea corte medio
 ctx.beginPath();
-ctx.moveTo(153, 65);
-ctx.lineTo(125, 55);
-ctx.lineTo(125, 80);
-ctx.lineTo(95, 68);
-ctx.lineTo(125, 55);
+ctx.moveTo(200, 105);
+ctx.lineTo(165, 93);
 ctx.stroke();
 ctx.closePath();
+
+// --------------------------------------------
+
+// cubo
+ctx.beginPath();
+ctx.moveTo(137, 107);
+ctx.lineTo(137, 80);
+ctx.lineTo(90, 62);
+ctx.lineTo(120, 50);
+ctx.lineTo(165, 67);
+ctx.lineTo(165, 93);
+ctx.lineTo(137, 107);
+ctx.lineTo(90, 89);
+ctx.lineTo(90, 62);
+ctx.stroke();
+ctx.closePath();
+
+// cubo corte
+ctx.beginPath();
+ctx.moveTo(137, 80);
+ctx.lineTo(165, 67);
+ctx.stroke();	
+ctx.closePath();
+}
+
+// VISTA SUPERIOR
+// function ViewVist_Sup11() {
+
+	var canvas = document.getElementById('CanvSect11');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// ---------- SECCION DERECHA ---------- 
+
+// Parte inferior 
+ctx.beginPath();
+ctx.fillStyle = "lightblue";
+ctx.moveTo(275, 45);
+ctx.lineTo(275, 135);
+ctx.lineTo(225, 135);
+ctx.lineTo(75, 135);
+ctx.lineTo(75, 105);
+ctx.lineTo(75, 105);
+ctx.lineTo(225, 105);
+ctx.lineTo(225, 45);
+ctx.lineTo(275, 45);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+	// ---------- SECCION SUPERIOR ---------- 
+
+// parte superior 
+ctx.beginPath();
+ctx.fillStyle = "rgba(250, 250, 4, 0.7)";
+ctx.moveTo(275, 135);
+ctx.lineTo(275, 15);
+ctx.lineTo(25, 15);
+ctx.lineTo(25, 25);
+ctx.lineTo(150, 25);
+ctx.lineTo(150, 45);
+ctx.lineTo(275, 45);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+	// ---------- SECCION SUPERIOR ---------- 
+
+// Parte Izquierda
+ctx.beginPath();
+ctx.fillStyle = 'lightgreen';
+ctx.moveTo(25, 25);
+ctx.lineTo(25, 135);
+ctx.lineTo(75, 135);
+ctx.lineTo(75, 45);
+ctx.lineTo(150, 45);
+ctx.lineTo(150, 25);
+ctx.lineTo(25, 25);
+ctx.stroke();
+ctx.fill();
+
+	// ---------- SECCION SUPERIOR ---------- 
+
+// cuadro medio
+ctx.beginPath();
+ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+ctx.fillRect(75, 45, 150, 60);
+ctx.strokeRect(75, 45, 150, 60);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+// }
+
