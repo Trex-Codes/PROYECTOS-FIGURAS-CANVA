@@ -123,7 +123,7 @@ ctx.closePath();
 }
 
 // VISTA SUPERIOR
-// function ViewVist_Sup11() {
+function ViewVist_Sup11() {
 
 	var canvas = document.getElementById('CanvSect11');
   	var ctx = canvas.getContext('2d');
@@ -189,5 +189,118 @@ ctx.strokeRect(75, 45, 150, 60);
 ctx.stroke();
 ctx.fill();
 ctx.closePath();
-// }
+}
 
+// VISTA FRONTAL
+function ViewVist_Front11() {
+
+	var canvas = document.getElementById('CanvSect11');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// PLANO PRINCIPAL
+	ctx.beginPath();
+	ctx.fillStyle = 'rgba(240, 235, 234, 0.9)';
+	ctx.strokeRect(25, 15, 250, 120);
+	ctx.closePath();
+
+// ---------- SECCION INFERIOR ---------- 
+
+// Figura inferior
+ctx.beginPath();
+ctx.fillStyle = "pink";
+ctx.moveTo(25, 135);
+ctx.lineTo(25, 75);
+ctx.lineTo(75, 75);
+ctx.lineTo(75, 105);
+ctx.lineTo(275, 105);
+ctx.lineTo(275, 135);
+ctx.lineTo(25, 135);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+// ---------- SECCION SUPERIOR IZQUIERDA ---------- 
+
+// Figura izquierda 
+ctx.beginPath();
+ctx.fillStyle = "lightblue";
+ctx.moveTo(25, 15);
+ctx.lineTo(150, 15);
+ctx.lineTo(150, 45);
+ctx.lineTo(75, 45);
+ctx.lineTo(75, 75);
+ctx.lineTo(25, 75);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+// ---------- SECCION SUPERIOR DERECHA ---------- 
+
+ctx.beginPath();
+ctx.fillStyle = "rgba(240, 235, 234, 0.9)";
+ctx.moveTo(275, 105);
+ctx.lineTo(275, 15);
+ctx.lineTo(150, 15);
+ctx.lineTo(150, 45);
+ctx.lineTo(225, 45);
+ctx.lineTo(225, 105);
+ctx.lineTo(275, 105);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+// ---------- SECCION MEDIO ---------- 
+
+ctx.beginPath();
+ctx.fillStyle = "rgba(255, 229, 0, 0.7)";
+ctx.fillRect(75, 45, 150, 60);
+ctx.strokeRect(75, 45, 150, 60);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+}
+
+// VISTA LATERAL
+function ViewVist_Lat11() {
+
+var canvas = document.getElementById('CanvSect11');
+  var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+// ---------- SECCION LATERAL DERECHA ---------- 
+
+ctx.beginPath();
+ctx.fillStyle = "rgba(249, 16, 16, 0.7)";
+ctx.moveTo(275, 15);
+ctx.lineTo(275, 135);
+ctx.lineTo(25, 135);
+ctx.lineTo(25, 105);
+ctx.lineTo(225, 105);
+ctx.lineTo(225, 15);
+ctx.lineTo(275, 15);
+ctx.stroke();
+ctx.fill();
+ctx.closePath();
+
+// ---------- SECCION MEDIO ---------- 
+
+ctx.beginPath();
+ctx.fillStyle = "rgba(164, 219, 36, 0.7)";
+ctx.fillRect(75, 45, 150, 60);
+ctx.strokeRect(75, 45, 150, 60);
+ctx.stroke();
+ctx.closePath();
+
+// ---------- SECCION LATERAL IZQUIERDA ---------- 
+
+ctx.beginPath();
+ctx.fillStyle = "rgba(240, 235, 235, 0.9)";
+ctx.fillRect(25, 45, 50, 60);
+ctx.strokeRect(25, 45, 50, 60);
+ctx.stroke();
+ctx.closePath();
+
+}
