@@ -40,7 +40,7 @@ ctx.closePath();
 
 // --------------------------------------------
 
-// linea 90~ derecha (1)   
+// linea 90 derecha (1)   
 ctx.beginPath();
 ctx.lineTo(180, 61); 
 ctx.lineTo(200, 68);
@@ -48,7 +48,7 @@ ctx.lineTo(200, 84);
 ctx.stroke();
 ctx.closePath();
 
-// linea 90~ izquierda (2) 
+// linea 90 izquierda (2) 
 ctx.beginPath();
 ctx.lineTo(174, 100);
 ctx.lineTo(174, 113);
@@ -56,14 +56,14 @@ ctx.lineTo(97, 82);
 ctx.stroke();
 ctx.closePath();
 
-// Liena 180~ Superior (1)
+// Liena 180 Superior (1)
 ctx.beginPath();
 ctx.moveTo(173, 100);
 ctx.lineTo(200, 83);
 ctx.stroke();
 ctx.closePath();
 
-// Liena 180~ inferior (2)
+// Liena 180 inferior (2)
 ctx.beginPath();
 ctx.moveTo(143, 28);
 ctx.lineTo(121, 40);

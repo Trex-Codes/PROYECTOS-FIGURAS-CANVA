@@ -54,8 +54,6 @@ ctx.lineTo(200, 98); // Linea barra base 2.0 (Vista  frontal- lateral)
 ctx.stroke();
 ctx.closePath();
 
-	
-
 // --------------------------------------------
 
 // Linea corte derecho 90

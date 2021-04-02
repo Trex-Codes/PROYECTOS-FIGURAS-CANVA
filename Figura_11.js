@@ -302,5 +302,4 @@ ctx.fillRect(25, 45, 50, 60);
 ctx.strokeRect(25, 45, 50, 60);
 ctx.stroke();
 ctx.closePath();
-
 }

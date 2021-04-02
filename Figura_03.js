@@ -1,5 +1,3 @@
-// ------------------ CUBO BASE BASICA ------------------
-
 // FIGURA
 function ViewFigure3(){
 
