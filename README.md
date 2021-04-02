@@ -21,7 +21,7 @@ _The objective of reconstructing 3D figures with their corresponding views of th
 _Branch which contains all the figures made in SketchUp_
 
 ## Author(s) ✒️
-- **Juan Giraldo** - _Initial Work, Documentation_ [Trex_Codes](https://github.com/Trex-Codes)
+- _Initial Work, Documentation_ [Trex-Codes](https://github.com/Trex-Codes)
 
 ## Contributions 🖇️
 _Contributions will not be accepted as it is a personal project so only the owner will have access to it_ 💬
