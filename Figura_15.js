@@ -1,5 +1,5 @@
 // FIGURA
-// function ViewFigure2(){
+function ViewFigure15(){
 
 	var canvas = document.getElementById('CanvSect15');
 	var ctx = canvas.getContext('2d');
@@ -121,3 +121,108 @@ ctx.lineTo(70, 113);
 ctx.lineTo(50, 105);
 ctx.stroke();
 ctx.closePath();
+}
+
+// VISTA SUPERIOR 
+function ViewVist_Sup15() {
+
+	var canvas = document.getElementById('CanvSect15');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// ---------- SECCION DERECHA ---------- 
+
+	// cuadro mayor 
+	ctx.beginPath();
+	ctx.fillStyle = "lightblue";
+	ctx.fillRect(175, 15, 100, 120);
+	ctx.strokeRect(175, 15, 100, 120);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	// ---------- SECCION MEDIA ---------- 
+
+	// cuadro medio 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(250, 250, 4, 0.7)";
+	ctx.fillRect(125, 15, 50, 120);
+	ctx.strokeRect(125, 15, 50, 120);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+
+	// ---------- SECCION IZQUIERDA ---------- 
+
+	// cuadro mayor 
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+	ctx.fillRect(25, 15, 100, 120);
+	ctx.strokeRect(25, 15, 100, 120);
+	ctx.fill();
+	ctx.stroke();
+	ctx.closePath();
+}
+
+// VISTA FRONTAL
+function ViewVist_Front15() {
+
+	var canvas = document.getElementById('CanvSect15');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// ---------- SECCION TOTAL ----------
+
+	// figura
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(255, 255, 255, 0.7)";
+	ctx.moveTo(25, 45);
+	ctx.lineTo(25, 135);
+	ctx.lineTo(75, 135);
+	ctx.lineTo(75, 75);
+	ctx.lineTo(225, 75);
+	ctx.lineTo(225, 135);
+	ctx.lineTo(275, 135);
+	ctx.lineTo(275, 45);
+	ctx.lineTo(175, 45);
+	ctx.lineTo(175, 15);
+	ctx.lineTo(125, 15);
+	ctx.lineTo(125, 45);
+	ctx.lineTo(75, 45);
+	ctx.lineTo(25, 45);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
+
+// VISTA LATERAL
+function ViewVist_Lat15() {
+
+	var canvas = document.getElementById('CanvSect15');
+  	var ctx = canvas.getContext('2d');
+  
+ 	ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+	// ---------- SECCION INFERIOR ----------
+
+	// seccion superior
+	ctx.beginPath();
+	ctx.fillStyle = "rgba(249, 16, 16 , 0.7)";
+	ctx.fillRect(25, 45, 250, 90);
+	ctx.strokeRect(25, 45, 250, 90);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+
+	// ---------- SECCION SUPERIOR ----------
+
+	ctx.beginPath();
+	ctx.fillStyle = "lightgreen";
+	ctx.fillRect(25, 15, 250, 30);
+	ctx.strokeRect(25, 15, 250, 30);
+	ctx.stroke();
+	ctx.fill();
+	ctx.closePath();
+}
